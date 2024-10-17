@@ -7,7 +7,7 @@ from snowflake.snowpark.functions import col
 try:    # Remove this line
     cnx = st.connection("snowflake")
     session = cnx.session()
-    st.success("Connected to snowfalke successfully!") # Remove this line
+    st.success("Connected to snowfalke!") # Remove this line
 except Exception as e: # Remove this line
     st.error(f"Error connecting to Snowflake: {str(e)}") # Remove this line
     st.stop() # Remove this line
